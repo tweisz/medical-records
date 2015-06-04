@@ -12,7 +12,7 @@ class CreatePatients < ActiveRecord::Migration
       t.string :firstname
       t.string :lastname
       t.string :specialty
-      t.timestamps null :false
+      t.timestamps null: false
     end
 
     add_index :doctors, :doctor_id
