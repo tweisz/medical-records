@@ -1,6 +1,6 @@
 class Patient < ActiveRecord::Base
   has_many :doctors
-  has_many :records, dependent :destroy
+  has_many :records
 
   def delete_record()
   end
