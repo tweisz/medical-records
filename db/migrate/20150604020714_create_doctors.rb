@@ -13,5 +13,8 @@ class CreateDoctors < ActiveRecord::Migration
       t.string :firstname
       t.string :lastname
       t.timestamps null: false
+    end
+
+    add_index :patients, :patient_id
   end
 end
