@@ -7,6 +7,5 @@ class CreateRecords < ActiveRecord::Migration
       t.timestamps null: false
     end
 
-    add_index :patients, :patient_id
   end
 end
